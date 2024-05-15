@@ -45,9 +45,8 @@ const whichLetter = (str) => {
 const combine = (arr) => {
   let result = ''
 
-  for (let i in arr) {
-    let element = arr[i]
-    let str = element.toString()
+  for (let i of arr) {
+    let str = i.toString()
     result += str
   }
 
